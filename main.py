@@ -135,7 +135,7 @@ class UrbanRoutesPage:
     def get_number_credit_card(self):
         return self.driver.find_element(*locators.add_card_field).get_property('value')
     def get_code_credit_card(self):
-        return self.driver.find_element(*locators.code_field).get_property('value')
+        return self.driver.find_element(*locators.add_code_card_field).get_property('value')
     def click_in_cerrar(self):
         return self.driver.find_element(*locators.cerrar_button).click()
 
